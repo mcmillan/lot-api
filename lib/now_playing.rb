@@ -14,10 +14,10 @@ module NowPlaying
           youtube_url: YOUTUBE_URL,
           mp3_url: MP3_URL
         },
-        current: {
+        current_show: {
           title: current_show ? current_show['name'] : 'N/A'
         },
-        next: {
+        next_show: {
           title: next_show ? next_show['name'] : 'N/A'
         }
       }
