@@ -9,17 +9,15 @@ module NowPlaying
     next_show = response['shows']['next']&.first
 
     {
-      data: {
-        stream: {
-          youtube_url: YOUTUBE_URL,
-          mp3_url: MP3_URL
-        },
-        current_show: {
-          title: current_show ? current_show['name'] : 'N/A'
-        },
-        next_show: {
-          title: next_show ? next_show['name'] : 'N/A'
-        }
+      stream: {
+        youtube_url: YOUTUBE_URL,
+        mp3_url: MP3_URL
+      },
+      current_show: {
+        title: current_show ? current_show['name'] : 'N/A'
+      },
+      next_show: {
+        title: next_show ? next_show['name'] : 'N/A'
       }
     }
   end
